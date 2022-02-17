@@ -1,0 +1,53 @@
+.xda-newsletter{
+    color: $color-white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+
+    &__col-1{
+        background-color: $color-smoky-black;
+        flex-grow: 2;
+        text-align: center;
+    }
+    &__col-2{
+        width: 9%;
+        margin-top: 5%;
+       
+        
+    }
+    &__subtittle{ 
+        font-family: 'Old Standard TT', serif;
+        font-size: $fz-xx-large;
+        margin-bottom: 4%;
+    }
+    &__subscribe{
+        writing-mode: vertical-lr;
+        transform: rotate(360deg);
+        background-color: $color-white;
+        width: 20%;
+        text-align: center;
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        -webkit-writing-mode: vertical-lr;
+        -ms-writing-mode: vertical-lr;
+    }
+    &__a{
+        text-decoration: none;
+        color: $color-smoky-black;
+        font-family: 'Old Standard TT', serif;
+        font-weight: 700;
+        font-size: $fz-x-large;
+    }
+    &__input{
+        @extend %input-email;
+        min-width: auto;
+
+        @media screen and (min-width: 1200px){
+           
+        }
+
+    }
+ }

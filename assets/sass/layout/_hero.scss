@@ -1,0 +1,59 @@
+.xda-hero{
+    display: flex;
+    flex-direction: column;
+    @media screen and (min-width: 1200px){
+        flex-direction: row-reverse;
+    }
+    &__img{
+        background-image: url(../img/imagen1.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 350px;
+        @media screen and (min-width: 1200px){
+            width: 100%;
+            height: auto;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }  
+
+    }
+    &__tittle{
+        margin: auto;
+        font-family: 'Old Standard TT', serif;
+        font-size:$fz-xxx-large;
+    }
+    &__content{
+        color: $color-granite-gray;
+        margin: 0 auto;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        @media screen and (min-width: 1200px) {
+            height: fit-content;
+            justify-content: space-between;
+        }
+    }
+    &__text{
+        padding: 7% 7% 0;
+        @media screen and (min-width: 1200px){
+            padding:10% 10%;
+        }
+    }
+    &__paragraph{
+        margin: 0 auto;
+        line-height: 2;
+    }
+    &__btn{
+        @extend %btn-primary;
+        margin: 5% 0 10%;
+        @media screen and (min-width: 1200px){
+            max-width: 100px;
+            margin: 5% 0;
+        }
+    }
+}
+.svg4{
+    width: 300px;
+    height: 300px;
+}

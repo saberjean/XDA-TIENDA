@@ -1,0 +1,65 @@
+.xda-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+    &__brand{
+        background-color: $color-smoky-black;
+        color: $color-white;
+        padding: 2rem;
+        writing-mode: vertical-lr;
+        -webkit-writing-mode: vertical-lr;
+        -ms-writing-mode: vertical-lr;
+        transform: rotate(180deg);
+        -webkit-transform: rotate(180deg);
+        -moz-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+        -o-transform: rotate(180deg);
+        font-size: $fz-large;
+        @media (min-width: $tablet) {
+          transform: rotate(-90deg);
+          -webkit-transform: rotate(-90deg);
+          -moz-transform: rotate(-90deg);
+          -ms-transform: rotate(-90deg);
+          -o-transform: rotate(-90deg);
+          width: 80px;
+          display: flex;
+          align-items: center;
+          justify-content: center; }
+    }
+    &__input{
+        position: absolute;
+        right: 25px;
+        width: 48px;
+        height: 48px;
+        opacity: 0;
+    }
+    &__nav{
+        display: none;
+    }
+    &__icon-bars{
+        font-size: $fz-xxx-large;
+        pointer-events: none;
+        position: absolute;
+        right: 25px;
+        width: 48px;
+        height: 48px;
+    }
+    &__a{
+        text-decoration: none;
+        display: block;
+        padding: 10px 100px 10px 10px;
+        background-color: $color-white;
+        color: $color-smoky-black;
+        font-size: $fz-x-large;
+        font-weight: 700;
+        left: 50px;
+  }
+}
+  
+  .xda-nav input:checked ~ .xda-nav__nav {
+    display: flex;
+    
+  }
+ 
+
+  

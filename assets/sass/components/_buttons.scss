@@ -1,0 +1,23 @@
+%btn-primary{
+    display: inline-block;
+    font-weight: 400;
+    line-height: 1.5;
+    color: $color-smoky-black;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    background-color: $color-white;
+    border: 1px solid $color-smoky-black;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    &:hover{
+        background-color: $color-smoky-black;
+        color: $color-white;
+        border: 1px solid $color-white;
+    }
+}
